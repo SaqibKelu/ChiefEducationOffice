@@ -1,0 +1,164 @@
+<!-- === BEGIN HEADER === -->
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+    <!--<![endif]-->
+    <head>
+        <!-- Title -->
+        <title>Municipal Forms</title>
+        <!-- Meta -->
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="assets/img/app_icon/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="assets/img/app_icon/favicon.ico" type="image/x-icon">
+        <!-- Bootstrap Core CSS -->
+        <link rel="stylesheet" href="assets/css/bootstrap.css" rel="stylesheet">
+        <!-- Template CSS -->
+        <link rel="stylesheet" href="assets/css/animate.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/font-awesome.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/nexus.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/responsive.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/custom.css" rel="stylesheet">
+
+        <script type="text/javascript">
+            function includeHTML() {
+              var z, i, elmnt, file, xhttp;
+              /*loop through a collection of all HTML elements:*/
+              z = document.getElementsByTagName("*");
+              for (i = 0; i < z.length; i++) {
+                elmnt = z[i];
+                /*search for elements with a certain atrribute:*/
+                file = elmnt.getAttribute("w3-include-html");
+                if (file) {
+                  /*make an HTTP request using the attribute value as the file name:*/
+                  xhttp = new XMLHttpRequest();
+                  xhttp.onreadystatechange = function() {
+                    if (this.readyState == 4) {
+                      if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+                      if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+                      /*remove the attribute, and call this function once more:*/
+                      elmnt.removeAttribute("w3-include-html");
+                      includeHTML();
+                    }
+                  }      
+                  xhttp.open("GET", file, true);
+                  xhttp.send();
+                  $('#hornavmenu').slicknav();
+                  /*exit the function:*/
+                  return;
+                }
+              }
+            };
+        </script>
+
+        <!-- Google Fonts-->
+        <link href="http://fonts.googleapis.com/css?family=Roboto:400,300" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div id="body_bg">
+            
+            <div class="primary-container-group">
+                <!-- Background -->
+                <div class="primary-container-background">
+                    <div class="primary-container"></div>
+                    <div class="clearfix"></div>
+                </div>
+                <!--End Background -->
+                <div class="primary-container">
+                    <div w3-include-html="header.html"></div>
+                    <!-- End Top Menu -->
+                    <!-- === END HEADER === -->
+                    <!-- === BEGIN CONTENT === -->
+                    <div id="content">
+                        <div class="container">
+                            <div class="row margin-vert-30">
+                                <div class="col-md-12 margin-top-30">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h3 class="panel-title">Loreium ipsum</h3>
+                                        </div>
+                                        <div class="panel-body">
+                                            <!-- <ul class="list-unstyled list-services">
+                                                <li>
+                                                    <i class="fa fa-file-text-o color-gray-light"></i>
+                                                    <a href="#">Notice of Publication of the Draft Electoral Roll</a>
+                                                </li>
+                                                <li>
+                                                    <i class="fa fa-file-text-o color-gray-light"></i>
+                                                    <a href="#">Claim Application for inclusion of Name (FORM PER-2A)</a>
+                                                </li>
+                                                <li>
+                                                    <i class="fa fa-file-text-o color-gray-light"></i>
+                                                    <a href="#">Application for Correction of Particulars in any entry</a>
+                                                </li>
+                                                <li>
+                                                    <i class="fa fa-file-text-o color-gray-light"></i>
+                                                    <a href="#">Applicaton for Deletion of Names</a>
+                                                </li>
+                                               <li>
+                                                    <i class="fa fa-file-text-o color-gray-light"></i>
+                                                    <a href="#">Claim Application for Transposition of Entry</a>
+                                                </li>
+                                                <li>
+                                                    <i class="fa fa-file-text-o color-gray-light"></i>
+                                                    <a href="#">Notice for Inclusion of Names</a>
+                                                </li>
+                                                <li>
+                                                    <i class="fa fa-file-text-o color-gray-light"></i>
+                                                    <a href="#">Notice for Correction of Names</a>
+                                                </li>
+                                                <li>
+                                                    <i class="fa fa-file-text-o color-gray-light"></i>
+                                                    <a href="#">Notice for Deletion of Names</a>
+                                                </li>
+                                                <li>
+                                                    <i class="fa fa-file-text-o color-gray-light"></i>
+                                                    <a href="#">Notice for Transposition of Names</a>
+                                                </li>
+                                                <li>
+                                                    <i class="fa fa-file-text-o color-gray-light"></i>
+                                                    <a href="#">Notice for SUO MOTO Deletion of Names</a>
+                                                </li>
+                                            </ul> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- === END CONTENT === -->
+            <!-- === BEGIN FOOTER === -->
+            <div w3-include-html="footer.html"></div>
+        </div>            
+        <!-- End Footer Menu -->
+        <!-- JS -->
+        <script type="text/javascript" src="assets/js/jquery.min.js" type="text/javascript"></script>
+        <script type="text/javascript" src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+        <script type="text/javascript" src="assets/js/scripts.js"></script>
+        <!-- Isotope - Portfolio Sorting -->
+        <script type="text/javascript" src="assets/js/jquery.isotope.js" type="text/javascript"></script>
+        <!-- Mobile Menu - Slicknav -->
+        <script type="text/javascript" src="assets/js/jquery.slicknav.js" type="text/javascript"></script>
+        <!-- Animate on Scroll-->
+        <script type="text/javascript" src="assets/js/jquery.visible.js" charset="utf-8"></script>
+        <!-- Sticky Div -->
+        <script type="text/javascript" src="assets/js/jquery.sticky.js" charset="utf-8"></script>
+        <!-- Slimbox2-->
+        <script type="text/javascript" src="assets/js/slimbox2.js" charset="utf-8"></script>
+        <!-- Modernizr -->
+        <script src="assets/js/modernizr.custom.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            includeHTML();
+        </script>
+        <!-- End JS -->
+    </body>
+</html>
+<!-- === END FOOTER === -->

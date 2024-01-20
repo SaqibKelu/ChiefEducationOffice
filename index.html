@@ -1,0 +1,576 @@
+<!-- === BEGIN HEADER === -->
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<head>
+    <!-- Title -->
+    <title>Chief Education Officer Doda</title>
+    <!-- Meta -->
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="">
+    <meta name="CEO Doda" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/img/app_icon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/img/app_icon/favicon.ico" type="image/x-icon">
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css" rel="stylesheet">
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="assets/css/animate.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/nexus.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/responsive.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="assets/css/custom.css" rel="stylesheet"> -->
+    <script type="text/javascript" src="assets/js/jquery.min.js" type="text/javascript"></script>
+    <!-- owl carousel css -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.css">
+    <!-- Slimbox2-->
+    <link rel="stylesheet" href="assets/css/slimbox2.css">
+    <!-- <script type="text/javascript" src="assets/js/slimbox2.js" charset="utf-8"></script> -->
+    <script type="text/javascript">
+        function includeHTML() {
+            var z, i, elmnt, file, xhttp;
+            /*loop through a collection of all HTML elements:*/
+            z = document.getElementsByTagName("*");
+            for (i = 0; i < z.length; i++) {
+                elmnt = z[i];
+                /*search for elements with a certain atrribute:*/
+                file = elmnt.getAttribute("w3-include-html");
+                if (file) {
+                    /*make an HTTP request using the attribute value as the file name:*/
+                    xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function () {
+                        if (this.readyState == 4) {
+                            if (this.status == 200) { elmnt.innerHTML = this.responseText; }
+                            if (this.status == 404) { elmnt.innerHTML = "Page not found."; }
+                            /*remove the attribute, and call this function once more:*/
+                            elmnt.removeAttribute("w3-include-html");
+                            includeHTML();
+                            //update the year dynamically for copyright
+                            document.getElementById("currentYear").innerHTML = new Date().getFullYear();
+                        }
+                    }
+                    xhttp.open("GET", file, true);
+                    xhttp.send();
+                    $('#hornavmenu').slicknav();
+                    $(".thumbBox").lightbox()
+                    /*exit the function:*/
+                    return;
+                }
+            }
+        };
+
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel({
+                loop: true,
+                margin: 10,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 2,
+                        nav: true
+                    },
+                    600: {
+                        items: 4,
+                        nav: true
+                    },
+                    1000: {
+                        items: 5,
+                        nav: true,
+                        loop: true
+                    }
+                }
+            });
+        });
+
+    </script>
+
+    <!-- Google Fonts-->
+    <link href="http://fonts.googleapis.com/css?family=Roboto:400,300" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div id="body_bg">
+
+        <div class="primary-container-group">
+            <!-- Background -->
+            <div class="primary-container-background">
+                <div class="primary-container"></div>
+                <div class="clearfix"></div>
+            </div>
+            <!--End Background -->
+            <div class="primary-container">
+                <div w3-include-html="header.html">
+
+                </div>
+                <!-- === END HEADER === -->
+                <!-- === BEGIN CONTENT === -->
+                <div id="content">
+                    <div class="container no-padding">
+                        <div class="row margin-vert-30">
+                            <!-- Begin Sidebar Menu -->
+                            <div class="col-md-3">
+                                <ul class="list-group sidebar-nav" id="sidebar-nav">
+                                    <!-- Menu 1 Introduction -->
+                                    <li class="list-group-item">
+                                        <a href="#">Introduction</a>
+                                    </li>
+                                    <!-- End Menu 1 -->
+                                    <!-- Menu 2 Who's who -->
+                                    <li class="list-group-item list-toggle">
+                                        <a data-toggle="collapse" data-parent="#sidebar-nav"
+                                            href="#collapse-whos-who">Who's Who</a>
+                                        <ul id="collapse-whos-who" class="collapse">
+                                            <li>
+                                                <a target="_blank" rel="noopener noreferrer"
+                                                    href="#">
+                                                    <i class="fa fa-users"></i>Lorem ipsum dolor sit amet, viris nonumes
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fa fa-users"></i>Lorem ipsum dolor sit amet, viris nonumes
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fa fa-users"></i>Lorem ipsum dolor sit amet, viris nonumes
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fa fa-users"></i>Lorem ipsum dolor sit amet, viris nonumes
+                                                </a>
+                                            </li>
+                                            
+                                        </ul>
+                                    </li>
+                                    <!-- End Menu 2 -->
+                                    <!-- Menu 3 Organisation Chart -->
+                                    <li class="list-group-item list-toggle">
+                                        <a class="accordion-toggle" href="#collapse-org-chart"
+                                            data-toggle="collapse">Organisation Chart</a>
+                                        <ul id="collapse-org-chart" class="collapse">
+                                            <li>
+                                                <span class="badge">New</span>
+                                                <a href="#">
+                                                    <i class="fa fa-dot-circle-o"></i>Lorem ipsum dolor sit amet, viris nonumes
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <span class="badge">New</span>
+                                                <a href="#">
+                                                    <i class="fa fa-dot-circle-o"></i>..........
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <!-- End Menu 3 -->
+                                    <!-- Menu 4 Legal Provisions -->
+                                    <li class="list-group-item list-toggle">
+                                        <a data-toggle="collapse" data-parent="#sidebar-nav"
+                                            href="#collapse-legal-prov">Legal Provisions</a>
+                                        <ul id="collapse-legal-prov" class="collapse">
+                                            <li>
+                                                <span class="badge badge-u">New</span>
+                                                <a target="_blank" rel="noopener noreferrer"
+                                                    href="#">
+                                                    <i class="fa fa-legal"></i>Lorem ipsum dolor sit amet, viris nonumes
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a target="_blank" rel="noopener noreferrer"
+                                                    href="#">
+                                                    <i class="fa fa-legal"></i>Lorem ipsum dolor sit amet, viris nonumes
+                                                </a>
+                                            </li>                                            
+                                        </ul>
+                                    </li>
+                                    <!-- End Menu 4 -->
+                                    <!-- Menu 5 Statutory Forms -->
+                                    <li class="list-group-item list-toggle">
+                                        <a data-toggle="collapse" data-parent="#sidebar-nav"
+                                            href="#collapse-st-forms">Statutory Forms
+
+                                        </a>
+                                        <ul id="collapse-st-forms" class="collapse">
+                                            <li>
+                                                <span class="badge badge-u">New</span>
+                                                <a href="panchayat-forms.html">
+                                                    <i class="fa fa-file-text-o"></i>Lorem ipsum dolor sit amet, viris nonumes
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="municipal-forms.html">
+                                                    <i class="fa fa-file-text-o"></i>Lorem ipsum dolor sit amet, viris nonumes
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <!-- End Menu 5 -->
+                                    
+                                    <!-- Menu 8 Handbooks -->
+                                    <li class="list-group-item list-toggle">
+                                        <a data-toggle="collapse" data-parent="#sidebar-nav"
+                                            href="#collapse-handbooks">HandBooks
+
+                                        </a>
+                                        <ul id="collapse-handbooks" class="collapse">
+                                            <li>
+                                                <span class="badge badge-u">New</span>
+                                                <a target="_blank" rel="noopener noreferrer"
+                                                    href="">
+                                                    <i class="fa fa-book"></i>Lorem ipsum dolor sit amet, viris nonumes
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a target="_blank" rel="noopener noreferrer" href="#">
+                                                    <i class="fa fa-book"></i>Lorem ipsum dolor sit amet, viris nonumes
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a target="_blank" rel="noopener noreferrer"
+                                                    href="#">
+                                                    <i class="fa fa-book"></i>Lorem ipsum dolor sit amet, viris nonumes
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a target="_blank" rel="noopener noreferrer" href="#">
+                                                    <i class="fa fa-book"></i>Handbooks for Panchayats
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <!-- End Menu 8 -->
+                                    <!-- Menu 9 Results -->
+                                    <li class="list-group-item list-toggle">
+                                        <a data-toggle="collapse" data-parent="#sidebar-nav"
+                                            href="#collapse-results">Results
+
+                                        </a>
+                                        <ul id="collapse-results" class="collapse">
+                                            <li>
+                                                <span class="badge badge-u">New</span>
+                                                <a href="#">
+                                                    <i class="fa fa-bar-chart"></i>Lorem ipsum dolor sit amet, viris nonumes
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fa fa-bar-chart"></i>Lorem ipsum dolor sit amet, viris nonumes
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <!-- End Menu 9 -->
+                                    <!-- Menu 11 Press Release -->
+                                    <!-- <li class="list-group-item">
+                                            <a href="#">Press Release</a>
+                                        </li> -->
+                                    <!-- End Menu 11 -->
+                                </ul>
+                            </div>
+                            <!-- End Sidebar Menu -->
+                            <div class="col-md-9">
+                                <!-- Carousel Slideshow -->
+                                <div id="carousel-example" class="carousel slide" data-ride="carousel">
+                                    <!-- Carousel Indicators -->
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#carousel-example" data-slide-to="0" class="active"></li>
+                                        <li data-target="#carousel-example" data-slide-to="1"></li>
+                                        <!-- <li data-target="#carousel-example" data-slide-to="2"></li> -->
+                                    </ol>
+                                    <div class="clearfix"></div>
+                                    <!-- End Carousel Indicators -->
+                                    <!-- Carousel Images -->
+                                    <div class="carousel-inner">
+                                        <div class="item active">
+                                            <img src="assets/img/slideshow/slide1.jpg">
+                                        </div>
+                                        <div class="item">
+                                            <img src="assets/img/slideshow/slide2.jpg">
+                                        </div>
+                                    </div>
+                                    <!-- End Carousel Images -->
+                                    <!-- Carousel Controls -->
+                                    <a class="left carousel-control" href="#carousel-example" data-slide="prev">
+                                        <span class="glyphicon glyphicon-chevron-left"></span>
+                                    </a>
+                                    <a class="right carousel-control" href="#carousel-example" data-slide="next">
+                                        <span class="glyphicon glyphicon-chevron-right"></span>
+                                    </a>
+                                    <!-- End Carousel Controls -->
+                                </div>
+                                <!-- End Carousel Slideshow -->
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="container background-gray-lighter">
+                                <div class="row">
+                                    <h2 class="animate fadeIn text-center margin-top-50">Welcome to Chief Education
+                                        Office, Doda</h2>
+                                    <hr class="margin-top-15">
+                                    <!-- <img src="assets/img/frontpage/Shaleen_Kabra.jpg" style="margin-left: auto; margin-right: auto; display: block" class="img-circle padding-bottom-10" alt="Cinque Terre" width="204" height="204">                                                                               
+                                        <p class="animate fadeIn text-center">
+                                            <b>Sh. Shaleen Kabra, IAS</b></br>
+                                            <b>Chief Electoral Officer</b></br>
+                                            Jammu & Kashmir
+                                        </p> -->
+                                    <div class="carousel slide testimonials" id="testimonials1">
+                                        <div class="carousel-inner">
+                                            <div class="item active">
+                                                <div class="col-md-12">
+                                                    <p>
+                                                        The best way to make a decision in a society is through larger
+                                                        participation of all its citizens
+                                                        having access to relevant information. In addition, the internet
+                                                        has redefined relationships among
+                                                        various stakeholders in the process of governance. This website
+                                                        is an attempt to provide a citizen-friendly,
+                                                        open and transparent interface between the Education Department
+                                                        and the public of Doda.
+                                                    </p>
+                                                    <div class="testimonial-info">
+                                                        <img alt="Chief ELection Officer J&amp;K"
+                                                            src="assets/img/frontpage/user.png"
+                                                            class="img-circle img-responsive" />
+                                                        <span class="testimonial-author">
+                                                            Sh. Purshotam Gouria
+                                                            <em>
+                                                                Chief Education Officer
+                                                            </em>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <p class="text-center animate fadeInUp margin-bottom-50">
+                                        <button type="button" class="btn btn-lg btn-blue">CEO's Desk</button>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <div class="row margin-vert-30">
+                                    <!-- Tabs column -->
+                                    <div class="col-md-9 margin-bottom-20">
+                                        <!-- Tabs -->
+                                        <div class="tabs">
+                                            <ul class="nav nav-tabs">
+                                                <li class="active">
+                                                    <a href="#tab-announcements" data-toggle="tab"><i
+                                                            class="fa fa-bullhorn"></i> Announcements</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#tab-orders" data-toggle="tab"><i
+                                                            class="fa fa-paperclip"></i> Orders</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#tab-pr" data-toggle="tab"><i class="fa fa-rss"></i> Press
+                                                        Release</a>
+                                                </li>
+                                            </ul>
+                                            <div class="tab-content">
+                                                <!-- Announcements -->
+                                                <div class="tab-pane fade in active" id="tab-announcements">
+                                                    <ul>
+                                                        <li>
+                                                            <a target="_blank" rel="noopener noreferrer"
+                                                                href="#"
+                                                                class="fa-file-pdf-o">Corrigendum to Notification No.
+                                                                5402/CEO/Pyt/2017/1742
+                                                                dated 22.03.2017, No. 5402/CEO/Pyt/2017/633 dated
+                                                                16.06.2017 and No.
+                                                                5402/CEO/Pyt/2017/792 dated 19.09.2017
+                                                            </a> &nbsp;
+                                                            <span class="badge badge_new_notice">New</span>
+                                                        </li>
+                                                        <li>
+                                                            <a target="_blank" rel="noopener noreferrer"
+                                                                class="fa-file-pdf-o"
+                                                                href="#">Notice
+                                                                No. 5402/CEO/Pyt/2017/2364 dated 14.12.2017</a>
+                                                            &nbsp;<span class="badge badge_new_notice">New</span>
+                                                        </li>
+                                                        <li>
+                                                            <a class="fa-file-pdf-o" href="#">Lorem ipsum dolor sit amet, viris nonumes</a>
+                                                            <span class="badge badge_new_notice">New</span>
+                                                        </li>
+                                                        <li>
+                                                            <a class="fa-file-pdf-o" href="#">Lorem ipsum dolor sit amet, viris nonumes</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="fa-file-pdf-o" href="#">Lorem ipsum dolor sit amet, viris nonumes</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="fa-file-pdf-o" href="#">Lorem ipsum dolor sit amet, viris nonumes</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="fa-file-pdf-o" href="#">Lorem ipsum dolor sit amet, viris nonumes</a>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="btn-rounded">
+                                                        <a href="#">More</a>
+                                                    </div>
+                                                </div>
+                                                <!-- Orders -->
+                                                <div class="tab-pane fade in" id="tab-orders">
+                                                    <ul >
+                                                      <li>
+                                                          <a href="#" class="fa-file-pdf-o">Lorem ipsum dolor sit amet, viris nonumes</a> &nbsp;
+                                                          <span class="badge badge_new_notice">New</span>
+                                                      </li>
+                                                      <li>
+                                                          <a class="fa-file-pdf-o" href="#">Lorem ipsum dolor sit amet, viris nonumes</a>
+                                                          <span class="badge badge_new_notice">New</span>
+                                                      </li>
+                                                      <li>
+                                                          <a class="fa-file-pdf-o" href="#">Lorem ipsum dolor sit amet, viris nonumes</a>
+                                                          <span class="badge badge_new_notice">New</span>
+                                                      </li>
+                                                      <li>
+                                                          <a class="fa-file-pdf-o" href="#">Lorem ipsum dolor sit amet, viris nonumes</a>
+                                                      </li>
+                                                      <li>
+                                                          <a class="fa-file-pdf-o" href="#">Lorem ipsum dolor sit amet, viris nonumes</a>
+                                                      </li>
+                                                      <li>
+                                                          <a class="fa-file-pdf-o" href="#">Lorem ipsum dolor sit amet, viris nonumes</a>
+                                                      </li>
+                                                      <li>
+                                                          <a class="fa-file-pdf-o" href="#">Lorem ipsum dolor sit amet, viris nonumes</a>
+                                                      </li>
+                                                    </ul>
+                                                </div>
+                                                <!-- Press Release -->
+                                                <div class="tab-pane fade in" id="tab-pr">
+                                                    <ul >
+                                                      <li>
+                                                          <a href="#" class="fa-file-pdf-o">Lorem ipsum dolor sit amet, viris nonumes</a> &nbsp;
+                                                          <span class="badge badge_new_notice">New</span>
+                                                      </li>
+                                                      <li>
+                                                          <a class="fa-file-pdf-o" href="#">Lorem ipsum dolor sit amet, viris nonumes</a>
+                                                      </li>
+                                                      <li>
+                                                          <a class="fa-file-pdf-o" href="#">Lorem ipsum dolor sit amet, viris nonumes</a>
+                                                      </li>
+                                                      <li>
+                                                          <a class="fa-file-pdf-o" href="#">Lorem ipsum dolor sit amet, viris nonumes</a>
+                                                      </li>
+                                                      <li>
+                                                          <a class="fa-file-pdf-o" href="#">Lorem ipsum dolor sit amet, viris nonumes</a>
+                                                      </li>
+                                                      <li>
+                                                          <a class="fa-file-pdf-o" href="#">Lorem ipsum dolor sit amet, viris nonumes</a>
+                                                      </li>
+                                                      <li>
+                                                          <a class="fa-file-pdf-o" href="#">Lorem ipsum dolor sit amet, viris nonumes</a>
+                                                      </li>
+                                                    </ul>
+                                                    <div class="clearfix"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End Tabs -->
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <!-- right side panel -->
+                                    <div class="col-md-3">
+                                        <div class="panel panel-green">
+                                            <div class="panel-heading">
+                                                <h3 class="panel-title">Search</h3>
+                                            </div>
+                                            <div class="panel-body">
+                                                <ul class="menu">
+                                                    <li>
+                                                        <a target="_blank" rel="noopener noreferrer" class="fa-search"
+                                                            href="#">Search Lorem ipsum</a>
+                                                    </li>
+                                                    <li>
+                                                        <a target="_blank" rel="noopener noreferrer" class="fa-search"
+                                                            href="#">Search Lorem</a>
+                                                    </li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="container"> 
+                                <!-- carousel for displaying important links                                -->
+                                <div class="owl-carousel owl-theme">
+                                    <div class="item">
+                                        <a target="_blank" rel="noopener noreferrer" href="http://ceojk.nic.in"><img
+                                                src="assets/img/portfolio/pmindia.png" style="max-width:100%;"></a>
+                                    </div>
+                                    <div class="item">
+                                        <a target="_blank" rel="noopener noreferrer" href="http://www.jkpr.gov.in/"><img
+                                                src="assets/img/portfolio/datafov.png" style="max-width:100%;"></a>
+                                    </div>
+                                    <div class="item">
+                                        <a target="_blank" rel="noopener noreferrer" href="http://drdj.nic.in/"><img
+                                                src="assets/img/portfolio/digital india.png" style="max-width:100%;"></a>
+                                    </div>
+                                    <div class="item">
+                                        <a target="_blank" rel="noopener noreferrer" href="http://jkhudd.gov.in/"><img
+                                                src="assets/img/portfolio/mygov.png" style="max-width:100%;"></a>
+                                    </div>
+                                    <div class="item">
+                                        <a target="_blank" rel="noopener noreferrer"
+                                            href="https://www.smcsite.org/"><img src="assets/img/portfolio/datafov.png"
+                                                style="max-width:100%;"></a>
+                                    </div>
+                                    <div class="item">
+                                        <a target="_blank" rel="noopener noreferrer"
+                                            href="https://www.jmcjammu.org/"><img src="assets/img/portfolio/mygov.png"
+                                                style="max-width:100%;"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- === END CONTENT === -->
+        <!-- === BEGIN FOOTER === -->
+        <div w3-include-html="footer.html"></div>
+    </div>
+    <!-- End Footer Menu -->
+    <!-- JS -->
+    <script type="text/javascript" src="assets/js/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="assets/js/scripts.js"></script>
+    <!-- Isotope - Portfolio Sorting -->
+    <script type="text/javascript" src="assets/js/jquery.isotope.js" type="text/javascript"></script>
+    <!-- Mobile Menu - Slicknav -->
+    <script type="text/javascript" src="assets/js/jquery.slicknav.js" type="text/javascript"></script>
+    <!-- Animate on Scroll-->
+    <script type="text/javascript" src="assets/js/jquery.visible.js" charset="utf-8"></script>
+    <!-- Sticky Div -->
+    <script type="text/javascript" src="assets/js/jquery.sticky.js" charset="utf-8"></script>    
+    <!-- Owl Carousel js -->
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <!-- Modernizr -->
+    <script src="assets/js/modernizr.custom.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        includeHTML();
+    </script>
+    <!-- Slimbox2-->
+    <script type="text/javascript" src="assets/js/slimbox2.js" charset="utf-8"></script>
+    <!-- End JS -->
+</body>
+
+</html>
+<!-- === END FOOTER === -->
